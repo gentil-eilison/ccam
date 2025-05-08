@@ -84,6 +84,8 @@ class KnowledgeCertificateCreateView(
         return super().form_valid(form)
 
 
+# Outro exemplo de regra dever estar no QuerySet
+
 class KnowledgeCertificateListView(LoginRequiredMixin, UserIsStudentTestMixin, FilteredListView):
     template_name = "academics/students/knowledge_certificate_filter.html"
     model = KnowledgeCertificate

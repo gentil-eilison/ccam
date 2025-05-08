@@ -10,6 +10,12 @@ from ccam.core.utils import user_directory_path
 from ccam.people import validators
 
 
+# Falar sobre herança multi-tabela
+# Tamanho da linha
+# Validadores (DRF Serializer x Formulários Django)
+# Funções de utilidade
+# Import do usuário do Django
+
 class Person(BaseModel):
     class Sex(models.TextChoices):
         MALE = "M", _("Masculino")

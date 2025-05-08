@@ -32,6 +32,7 @@ class SubjectCreateView(LoginRequiredMixin, UserIsCourseCoordinatorTestMixin, Su
         subject.course.add(self.request.user.person.coordinator_person.course)
         return response
 
+# Regras de negócio devem estar em QuerySets!
 
 class SubjectListView(LoginRequiredMixin, UserIsCourseCoordinatorTestMixin, FilteredListView):
     model = Subject

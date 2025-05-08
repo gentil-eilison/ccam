@@ -4,6 +4,9 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 
 
+# Exemplo de modelos abstratos
+
+
 def get_sentinel_user():
     return get_user_model().objects.get_or_create(username="deleted")[0]
 

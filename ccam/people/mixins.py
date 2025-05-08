@@ -1,3 +1,5 @@
+# Falar sobre uso de mixins para aproveitar lógica nas views
+
 from django.contrib.auth.mixins import UserPassesTestMixin
 
 from ccam.core.constants import (

@@ -10,6 +10,9 @@ from .models import Person
 User = get_user_model()
 
 
+# Falar sobre transações no banco de dados
+# Não está apropriado: mudar para o queryset
+
 @receiver(signal=pre_save, sender=Person)
 def create_person_auth_user(sender, instance: Person, **kwargs):
     with transaction.atomic():
